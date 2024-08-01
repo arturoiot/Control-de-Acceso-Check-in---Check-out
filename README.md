@@ -1,1 +1,1 @@
-# Control-de-Acceso-Check-in---Check-out
+# Control de Acceso Check in – Check out mediante lector de biométricos, Lector de Huella Digital, Reconocimiento facial y/o Matricula de Empleado y/o Alumno.
