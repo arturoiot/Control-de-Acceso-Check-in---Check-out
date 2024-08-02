@@ -68,5 +68,16 @@ En las pruebas finales se realizaron 2 versiones de Raspberry Pi; Se utilizo la 
 El prototipo funciona en ambas versiones, sin embargo, notamos que tiene mejor rendimiento en la versión 5. Por lo que se agrega evidencia de ambas versiones.
 
 
-### Base de Datos: CC
-![]()
+## Base de Datos: Registro-CC
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/DB.png)
+
+## Dashboard
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/dashboard.png)
+
+## Flow Node-RED
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/node.png)
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/node2.png)
+
+## Prototipo Completo con Raspberry Pi y ESP32-CAM
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/Prototipo.jpg)
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/camara2.jpg)
