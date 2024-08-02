@@ -38,3 +38,31 @@ La tecnología FaceID permite una identificación biométrica confiable.
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/jumpers.jpg)
 - Diodo Led
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/Leds.jpg)
+
+## 6. infraestructura de Software
+- [Raspberry Pi OS](https://www.raspberrypi.com/software/)
+- [Node-RED](https://nodered.org/)
+- [MySQL](https://www.mysql.com/)
+- [Arduino](https://www.arduino.cc/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+## 7. Servicios
+- 7.1 Registro de Entrada: Se tomará una foto a la entrada para el registro en la base de datos.
+- 7.2 Registro de salida: Se tomará una foto a la entrada para el registro en la base de datos.
+
+## 8. Resultados Esperados
+De ser implementado el proyecto, se lograrías los siguientes resultados:
+- Restringir el paso a sitios por horarios, puertas y usuarios NO autorizados
+- Controlar flujo de personas por las instalaciones 
+- Trazabilidad (Generación de Reportes).
+- Registro de tiempos y asistencia.
+- Control automático de entradas y salidas 
+- Control de personas dentro la sala de computo
+- Permite un control exacto del personal sin necesidad de presencia de supervisores para el registro de los ingresos y salida de los empleados.
+
+## 9. Conclusiones
+El prototipo presenta una solución innovadora al realizar un sistema simple que ayuda a hacer las cosas más seguras, creando un sistema de verificación y registro.
+
+En las pruebas finales se realizaron 2 versiones de Raspberry Pi; Se utilizo la versión 4 y la versión 5.
+
+El prototipo funciona en ambas versiones, sin embargo, notamos que tiene mejor rendimiento en la versión 5. Por lo que se agrega evidencia de ambas versiones.
