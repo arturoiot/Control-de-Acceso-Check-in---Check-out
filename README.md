@@ -34,6 +34,7 @@ La tecnología FaceID permite una identificación biométrica confiable.
 - Relevador de 5V
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/relay.jpg)
 - Cables Jumpers
+
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/jumpers.jpg)
 - Diodo Led
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/Leds.jpg)
