@@ -24,7 +24,7 @@ La tecnología FaceID permite una identificación biométrica confiable.
 - 4.3  Generar una base de datos de ingreso, salida y registro.
 
 ## Matriales Necesarios
-- ESP32-CAM
+- ![ESP32-CAM](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/ESP32-CAM.jpg)
 - Raspberry Pi 4B 8gb
 - Cargador tipo C para Raspberry P i
 - Monitor portatil
