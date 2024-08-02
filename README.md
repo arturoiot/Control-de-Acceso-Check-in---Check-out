@@ -27,8 +27,12 @@ La tecnología FaceID permite una identificación biométrica confiable.
 - ESP32-CAM
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/ESP32-CAM.jpg)
 - Raspberry Pi 4B 8gb
-- Cargador tipo C para Raspberry P i
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/raspberry.jpg)
 - Monitor portatil
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/monitor.jpg)
 - Relevador de 5V
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/relay.jpg)
 - Cables Jumpers
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/jumpers.jpg)
 - Diodo Led
+![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/Leds.jpg)
