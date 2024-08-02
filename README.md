@@ -66,3 +66,6 @@ El prototipo presenta una solución innovadora al realizar un sistema simple que
 En las pruebas finales se realizaron 2 versiones de Raspberry Pi; Se utilizo la versión 4 y la versión 5.
 
 El prototipo funciona en ambas versiones, sin embargo, notamos que tiene mejor rendimiento en la versión 5. Por lo que se agrega evidencia de ambas versiones.
+
+
+### Base de Datos: CC
