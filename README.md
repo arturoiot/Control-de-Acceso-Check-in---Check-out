@@ -22,3 +22,12 @@ La tecnología FaceID permite una identificación biométrica confiable.
 - 4.1 Recopilar e implementar técnicas de reconocimiento facial.
 - 4.2 Implementar un prototipo de prueba en un centro de computo.
 - 4.3  Generar una base de datos de ingreso, salida y registro.
+
+## Matriales Necesarios
+- ESP32-CAM
+- Raspberry Pi 4B 8gb
+- Cargador tipo C para Raspberry P i
+- Monitor portatil
+- Relevador de 5V
+- Cables Jumpers
+- Diodo Led
