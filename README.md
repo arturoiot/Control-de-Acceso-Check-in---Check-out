@@ -29,6 +29,7 @@ La tecnología FaceID permite una identificación biométrica confiable.
 - Raspberry Pi 4B 8gb
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/raspberry.jpg)
 - Monitor portatil
+
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/monitor.jpg)
 - Relevador de 5V
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/relay.jpg)
