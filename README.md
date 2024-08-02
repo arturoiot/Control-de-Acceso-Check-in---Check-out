@@ -69,3 +69,4 @@ El prototipo funciona en ambas versiones, sin embargo, notamos que tiene mejor r
 
 
 ### Base de Datos: CC
+![]()
