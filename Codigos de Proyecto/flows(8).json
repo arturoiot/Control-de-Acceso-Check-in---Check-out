@@ -1,0 +1,697 @@
+[
+    {
+        "id": "d76ff49778e639e2",
+        "type": "tab",
+        "label": "Registro",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f4b0e4c3723b1010",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Registro de Usuario",
+        "func": "global.set (\"Nombre\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ff0ef2c1884ac6e",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Proceso de Registro",
+        "func": "msg.payload = \"\"+global.get(\"Nombre\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "3f9cbca93ff3347b",
+                "2bf0c9f0e7b5958f"
+            ]
+        ]
+    },
+    {
+        "id": "3f9cbca93ff3347b",
+        "type": "exec",
+        "z": "d76ff49778e639e2",
+        "command": "python3 /home/ignis/Documents/Python/Proyecto/REGISTRO.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "604d46bcf4199b33"
+            ],
+            [
+                "604d46bcf4199b33"
+            ],
+            [
+                "604d46bcf4199b33"
+            ]
+        ]
+    },
+    {
+        "id": "604d46bcf4199b33",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2bf0c9f0e7b5958f",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bc2cc02bd982befd",
+        "type": "ui_button",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "group": "df76cb52c6cf8f17",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "REGISTRAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "0ff0ef2c1884ac6e"
+            ]
+        ]
+    },
+    {
+        "id": "7d7177ba9b1a877c",
+        "type": "ui_text_input",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "label": "NOM_AP_AM_MAT",
+        "tooltip": "",
+        "group": "df76cb52c6cf8f17",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "f4b0e4c3723b1010"
+            ]
+        ]
+    },
+    {
+        "id": "f144e407e790825e",
+        "type": "ui_template",
+        "z": "d76ff49778e639e2",
+        "group": "df76cb52c6cf8f17",
+        "name": "",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<iframe id=\"Video\" title=\"Video\" width=\"300\" height=\"200\" \n    src=\"http://192.168.137.94:81/stream\">\n</iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdd7783c789da398",
+        "type": "ui_button",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "group": "df76cb52c6cf8f17",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "ENTRADA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "9670fba41486b6c5"
+            ]
+        ]
+    },
+    {
+        "id": "9670fba41486b6c5",
+        "type": "exec",
+        "z": "d76ff49778e639e2",
+        "command": "python3 /home/ignis/Documents/Python/Proyecto/ENTRADA.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [],
+            [
+                "731ecfb424f8b284"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c191a9ee47495565",
+        "type": "ui_text",
+        "z": "d76ff49778e639e2",
+        "group": "61acbd34d169bdbc",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Nombre:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 760,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "731ecfb424f8b284",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e15ed177d20857c5",
+        "type": "mqtt in",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "topic": "Registro/Usuario",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1cf4394e3811019a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "e5c6d06bc8bfc1c2"
+            ]
+        ]
+    },
+    {
+        "id": "f52d455f14a58b6d",
+        "type": "mysql",
+        "z": "d76ff49778e639e2",
+        "mydb": "2e364785f59a8e6c",
+        "name": "BD",
+        "x": 750,
+        "y": 820,
+        "wires": [
+            [
+                "5f4ea9ac944f783f"
+            ]
+        ]
+    },
+    {
+        "id": "7439a9cdb31bffed",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Query",
+        "func": "msg.topic = \"INSERT INTO control_acceso (Nombre,Apellido_Paterno,Apellido_Materno,Matricula,Registro) VALUES ('\" + msg.payload.nom + \"',\" + msg.payload.app + \",\" + msg.payload.apm + \",\" + msg.payload.mat + \",\" + msg.payload.edo + \");\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "f52d455f14a58b6d"
+            ]
+        ]
+    },
+    {
+        "id": "adfaa0537f065a9f",
+        "type": "ui_button",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "group": "df76cb52c6cf8f17",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "SALIDA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "69aaff9f602070e9"
+            ]
+        ]
+    },
+    {
+        "id": "69aaff9f602070e9",
+        "type": "exec",
+        "z": "d76ff49778e639e2",
+        "command": "python3 /home/ignis/Documents/Python/Proyecto/SALIDA.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [],
+            [
+                "23e25516de27ce1c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "23e25516de27ce1c",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e5c6d06bc8bfc1c2",
+        "type": "json",
+        "z": "d76ff49778e639e2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "7cc058f757d517e2",
+                "61ca4b04ce2e7c8a",
+                "0921aa67048a0268",
+                "56020f0de39f2ef2",
+                "613a392a5ec63331",
+                "7439a9cdb31bffed"
+            ]
+        ]
+    },
+    {
+        "id": "a260a4f1e056b947",
+        "type": "ui_text",
+        "z": "d76ff49778e639e2",
+        "group": "61acbd34d169bdbc",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Apellido Paterno:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ddd7b77f7b263070",
+        "type": "ui_text",
+        "z": "d76ff49778e639e2",
+        "group": "61acbd34d169bdbc",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Apellido Materno:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e9feae68e2ca1a12",
+        "type": "ui_text",
+        "z": "d76ff49778e639e2",
+        "group": "61acbd34d169bdbc",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Matricula:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 760,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "7cc058f757d517e2",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Nombre",
+        "func": "msg.payload = msg.payload.nom;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [
+                "c191a9ee47495565"
+            ]
+        ]
+    },
+    {
+        "id": "61ca4b04ce2e7c8a",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Apellido_1",
+        "func": "msg.payload = msg.payload.app;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 640,
+        "wires": [
+            [
+                "a260a4f1e056b947"
+            ]
+        ]
+    },
+    {
+        "id": "0921aa67048a0268",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Apellido_2",
+        "func": "msg.payload = msg.payload.apm;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 680,
+        "wires": [
+            [
+                "ddd7b77f7b263070"
+            ]
+        ]
+    },
+    {
+        "id": "56020f0de39f2ef2",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Matricula",
+        "func": "msg.payload = msg.payload.mat;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 720,
+        "wires": [
+            [
+                "e9feae68e2ca1a12",
+                "f72b411ff5bcce13"
+            ]
+        ]
+    },
+    {
+        "id": "613a392a5ec63331",
+        "type": "function",
+        "z": "d76ff49778e639e2",
+        "name": "Estado",
+        "func": "msg.payload = msg.payload.edo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 760,
+        "wires": [
+            [
+                "68162acea3d77618"
+            ]
+        ]
+    },
+    {
+        "id": "68162acea3d77618",
+        "type": "ui_text",
+        "z": "d76ff49778e639e2",
+        "group": "61acbd34d169bdbc",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Registro:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 760,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5f4ea9ac944f783f",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f72b411ff5bcce13",
+        "type": "debug",
+        "z": "d76ff49778e639e2",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "df76cb52c6cf8f17",
+        "type": "ui_group",
+        "name": "CAPTURA",
+        "tab": "bdcaa08dc97cec90",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61acbd34d169bdbc",
+        "type": "ui_group",
+        "name": "DATOS DE USUARIO",
+        "tab": "bdcaa08dc97cec90",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1cf4394e3811019a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "3.79.88.185",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2e364785f59a8e6c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "CC",
+        "tz": "-06:00",
+        "charset": "UTF8"
+    },
+    {
+        "id": "bdcaa08dc97cec90",
+        "type": "ui_tab",
+        "name": "REGISTRO",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    }
+]
