@@ -81,3 +81,5 @@ El prototipo funciona en ambas versiones, sin embargo, notamos que tiene mejor r
 ## Prototipo Completo con Raspberry Pi y ESP32-CAM
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/Prototipo.jpg)
 ![](https://github.com/arturoiot/Control-de-Acceso-Check-in---Check-out/blob/main/Imagenes/camara2.jpg)
+
+Este proyecto fue realizado en el marco del curso IoT Essentials Developer impartido por [Codigo IoT ](https://www.codigoiot.com/) y organizado por la [Asociación Mexicana del Internet de las Cosas](https://www.asociacioniot.org/).
